@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="p-0 m-0 box-border bg-yellow font-Roboto">
+    <div class="container mt-12 flex flex-col items-center relative">
+      <div class="absolute pr-[1rem] sm:top-0 -top-5 right-0 heart">
+        <img class="md:w-[50px] md:h-50px w-[30px] h-[30px]" src="images/heart.svg" alt="like" />
+      </div>
+      <div>
+        <img class="w-[610px]" src="images/pokemon_logo.svg" alt="pokemon" />
+      </div>
+      <div class="flex flex-wrap mt-16 items-center gap-8">
+        <div
+          class="flex items-center bg-white px-20 py-3 py-2 gap-2 border-2 border-black rounded-large"
+        >
+          <div class="text-2xl font-bold">Gross</div>
+          <img src="images/arrow_down.svg" alt="Arrow Down" />
+        </div>
+        <div
+          class="flex items-center bg-white px-50 py-3 py-2 gap-28 border-2 border-black rounded-large"
+        >
+          <div class="text-2xl font-bold">Search</div>
+          <img src="images/search.svg" alt="Search" />
+        </div>
+        <div
+          class="flex items-center bg-white  py-3 justify-center w-[260px] py-2 gap-3 border-2 border-black rounded-large"
+        >
+          <div class="text-2xl font-bold">Aa-Zz</div>
+          <img src="images/arrow_down.svg" alt="Arrow Down" />
+        </div>
+        <div
+          class="flex items-center bg-white px-60 py-3 py-2 border-2 border-black rounded-large"
+        >
+          <div class="text-2xl font-bold">Button</div>
+        </div> 
+      </div>
+      <ul class="list flex flex-wrap mt-24 gap-6 items-center justify-center"></ul>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true,
+              padding: "1rem",
+              maxWidth: "1312px",
+            },
+            colors: {
+              yellow: {
+                DEFAULT: "#FFD845",
+              },
+            },
+            margin: {
+              50: "50px",
+            },
+            padding: {
+                50: "53px",
+                60: "60px"
+            },
+            borderRadius: {
+              large: "15px",
+            },
+            gap: {
+              15: "15px",
+            },
+            fontFamily: {
+                'Roboto': ['"Roboto", sans-serif'],
+            }
+          },
+        },
+      };
+    </script>
+    <script src="pocemonJs/pokemons.js"></script>
+    <script src="indexJs/index.js"></script>
+  </body>
+</html>
